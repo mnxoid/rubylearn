@@ -24,6 +24,16 @@ group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
+
+group :development, :test do
+  gem 'rspec-rails',      ">= 2.0.0.beta"
+  gem 'diff-lcs',		"1.2.5"
+end
+
+group :test do
+  gem 'selenium-webdriver', '>=2.35.1'
+  gem 'capybara', '>=2.1.0'
+end
 # End gems from tutorial
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
