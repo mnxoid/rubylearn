@@ -1,4 +1,6 @@
 {<img alt='Stories in Ready' src='https://badge.waffle.io/mnxoid/rubylearn.png?label=ready&title=Ready' />}[https://waffle.io/mnxoid/rubylearn]
+{<img alt='Stories in In Progress' src='https://badge.waffle.io/mnxoid/rubylearn.png?label=in%20Progress&title=In%20Progress' />}[https://waffle.io/mnxoid/rubylearn]
+{<img alt='Stories in Done' src='https://badge.waffle.io/mnxoid/rubylearn.png?label=Done&title=Done' />}[https://waffle.io/mnxoid/rubylearn]
 == README
 
 This README would normally document whatever steps are necessary to get the
