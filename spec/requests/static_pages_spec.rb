@@ -14,10 +14,17 @@ require 'capybara/rspec'
 describe "Static pages" do
 
   describe "Home page" do
-
-    it "should have the content 'Sample App'" do
+    it "should have the content 'Mnxoid home'" do
       visit '/static_pages/home'
-      expect(page).to have_content('Sample App')
+      expect(page).to have_content('Mnxoid home')
     end
   end
+
+  describe "Help page" do
+    it "should have the content 'Help'" do
+      visit '/static_pages/help'
+      expect(page).to have_content('Help')
+    end
+  end
+  
 end
