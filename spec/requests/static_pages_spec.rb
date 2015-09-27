@@ -13,6 +13,8 @@ require 'capybara/rspec'
 
 describe "Static pages" do
 
+  let(:base_title) { "Rubysite" }
+
   describe "Home page" do
     it "should have the content 'Mnxoid home'" do
       visit '/static_pages/home'
@@ -20,7 +22,7 @@ describe "Static pages" do
     end
     it "should have the right title" do
   	  visit '/static_pages/home'
-  	  expect(page).to have_title('Rubysite | Home')
+  	  expect(page).to have_title("#{base_title} | Home")
   	end
   end
 
@@ -31,7 +33,7 @@ describe "Static pages" do
     end
     it "should have the right title" do
   	  visit '/static_pages/help'
-  	  expect(page).to have_title('Rubysite | Help')
+  	  expect(page).to have_title("#{base_title} | Help")
   	end
   end
 
@@ -42,7 +44,18 @@ describe "Static pages" do
     end
     it "should have the right title" do
   	  visit '/static_pages/about'
-  	  expect(page).to have_title('Rubysite | About')
+  	  expect(page).to have_title("#{base_title} | About")
+  	end
+  end
+
+  describe "Contact page" do
+    it "should have the content 'Contact Us'" do
+      visit '/static_pages/contact'
+      expect(page).to have_content('Contact Us')
+    end
+    it "should have the right title" do
+  	  visit '/static_pages/contact'
+  	  expect(page).to have_title("#{base_title} | Contact")
   	end
   end
 
