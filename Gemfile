@@ -26,7 +26,7 @@ group :production do
 end
 
 group :development, :test do
-  gem 'rspec-rails',      ">= 2.0.0.beta"
+  gem 'rspec-rails',  ">=2.13.1"
   gem 'diff-lcs',		"1.2.5"
 end
 
