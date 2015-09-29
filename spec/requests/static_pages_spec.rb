@@ -16,9 +16,9 @@ describe "Static pages" do
   let(:base_title) { "Rubysite" }
 
   describe "Home page" do
-    it "should have the content 'Mnxoid home'" do
+    it "should have the content 'Mnxoid Home'" do
       visit '/static_pages/home'
-      expect(page).to have_content('Mnxoid home')
+      expect(page).to have_content('Mnxoid Home')
     end
     it "should have the right title" do
   	  visit '/static_pages/home'
