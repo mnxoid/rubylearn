@@ -8,4 +8,17 @@ module ApplicationHelper
 			"#{base_title} | #{page_title}"
 		end
 	end
+	def nav_url(page_name)
+		url_for(controller: 'static_pages',
+				action: page_name,
+				only_path: true)
+	end
+	def nav_list
+		[
+			["home","Home"],
+			["help","Help"],
+			["about","About"],
+			["contact","Contact Us"]
+		]
+	end
 end

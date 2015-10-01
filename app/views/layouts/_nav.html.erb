@@ -1,0 +1,17 @@
+<nav class="white" role="navigation">
+  <div class="nav-wrapper container">
+    <a id="logo-container" href="#" class="brand-logo hover-white">Mnxoid Inc.</a>
+    <ul class="right hide-on-med-and-down">
+    	<% nav_list.each { |action,caption| %>
+    	<li><a href="<%= nav_url action %>"><%= caption %></a></li>
+    	<% } %>
+    </ul>
+
+    <ul id="nav-mobile" class="side-nav">
+      <% nav_list.each { |action,caption| %>
+    	<li><a href="<%= nav_url action %>"><%= caption %></a></li>
+    	<% } %>
+    </ul>
+    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+  </div>
+</nav>
