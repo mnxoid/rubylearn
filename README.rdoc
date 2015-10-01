@@ -1,4 +1,7 @@
 {<img alt='Throughput Graph' src='https://graphs.waffle.io/mnxoid/rubylearn/throughput.svg' />}[https://waffle.io/mnxoid/rubylearn/metrics]
+== DOCUMENTATION
+http://mnxoid.github.io/rubylearn/doc/app/
+
 == README
 
 This README would normally document whatever steps are necessary to get the
